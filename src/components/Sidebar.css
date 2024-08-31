@@ -1,0 +1,93 @@
+/* Sidebar.css */
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.menu-item {
+  margin: 10px 0;
+}
+
+/* Sidebar Dropdown Button */
+.dropdown-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-button:hover {
+  background-color: #ddd;
+}
+
+/* Sidebar Dropdown Arrow */
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+/* Sidebar Dropdown Content */
+.dropdown-content {
+  padding-left: 20px;
+  background-color: #f4f4f4;
+}
+
+.dropdown-content a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333;
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Sidebar Links */
+.sidebar a {
+  text-decoration: none; /* Remove underline from sidebar links */
+  color: #333;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #ddd;
+}
